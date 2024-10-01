@@ -1,0 +1,69 @@
+<form [formGroup]="detailsForm" (ngSubmit)="onSubmit()">
+  <label for="firstName">First Name</label>
+  <input id="firstName" formControlName="firstName" type="text" />
+  <div *ngIf="detailsForm.get('firstName')?.invalid && detailsForm.get('firstName')?.touched">
+    <small *ngIf="detailsForm.get('firstName')?.errors?.['required']">First Name is required.</small>
+    <small *ngIf="detailsForm.get('firstName')?.errors?.['minlength']">First Name must be at least 3 characters long.</small>
+  </div>
+  <label for="middleName">Middle Name</label>
+  <input id="middleName" formControlName="middleName" type="text" />
+  <div *ngIf="detailsForm.get('middleName')?.invalid && detailsForm.get('middleName')?.touched">
+    <small *ngIf="detailsForm.get('middleName')?.errors?.['required']">Middle Name is required.</small>
+    <small *ngIf="detailsForm.get('middleName')?.errors?.['minlength']">Middle Name must be at least 3 characters long.</small>
+  </div>
+  <label for="lastName">Last Name</label>
+  <input id="lastName" formControlName="lastName" type="text" />
+  <div *ngIf="detailsForm.get('lastName')?.invalid && detailsForm.get('lastName')?.touched">
+    <small *ngIf="detailsForm.get('lastName')?.errors?.['required']">Last Name is required.</small>
+    <small *ngIf="detailsForm.get('lastName')?.errors?.['minlength']">Last Name must be at least 3 characters long.</small>
+  </div>
+
+  <label for="designation">Designation</label>
+  <input id="designation" formControlName="designation" type="text" />
+  <div *ngIf="detailsForm.get('designation')?.invalid && detailsForm.get('designation')?.touched">
+    <small>Designation is required.</small>
+  </div>
+
+  <label for="doj">Date of Joining</label>
+  <input id="doj" formControlName="doj" type="text" />
+  <div *ngIf="detailsForm.get('doj')?.invalid && detailsForm.get('doj')?.touched">
+    <small>Date is required.</small>
+  </div>
+
+  <label for="currentTeam">Date of Joining</label>
+  <input id="currentTeam" formControlName="currentTeam" type="text" />
+  <div *ngIf="detailsForm.get('currentTeam')?.invalid && detailsForm.get('currentTeam')?.touched">
+    <small>Date is required.</small>
+  </div>
+
+  <label for="repManFirstName">Manager First Name</label>
+  <input id="repManFirstName" formControlName="repManFirstName" type="text" />
+  <div *ngIf="detailsForm.get('repManFirstName')?.invalid && detailsForm.get('repManFirstName')?.touched">
+    <small *ngIf="detailsForm.get('repManFirstName')?.errors?.['required']">Manager First Name is required.</small>
+    <small *ngIf="detailsForm.get('repManFirstName')?.errors?.['minlength']">Manager First Name must be at least 3 characters long.</small>
+  </div>
+  <label for="repManMiddleName">Middle Name</label>
+  <input id="repManMiddleName" formControlName="repManMiddleName" type="text" />
+  <div *ngIf="detailsForm.get('repManMiddleName')?.invalid && detailsForm.get('repManMiddleName')?.touched">
+    <small *ngIf="detailsForm.get('repManMiddleName')?.errors?.['required']">Middle Name is required.</small>
+    <small *ngIf="detailsForm.get('repManMiddleName')?.errors?.['minlength']">Middle Name must be at least 3 characters long.</small>
+  </div>
+  <label for="repManLastName">Last Name</label>
+  <input id="repManLastName" formControlName="repManLastName" type="text" />
+  <div *ngIf="detailsForm.get('repManLastName')?.invalid && detailsForm.get('repManLastName')?.touched">
+    <small *ngIf="detailsForm.get('repManLastName')?.errors?.['required']">Last Name is required.</small>
+    <small *ngIf="detailsForm.get('repManLastName')?.errors?.['minlength']">Last Name must be at least 3 characters long.</small>
+  </div>
+  <label for="mobile">Contact</label>
+  <input id="mobile" formControlName="mobile" type="text" />
+  <div *ngIf="detailsForm.get('mobile')?.invalid && detailsForm.get('mobile')?.touched">
+    <small>Contact is required.</small>
+  </div>
+  <label for="email">Email</label>
+  <input id="email" formControlName="email" type="text" />
+  <div *ngIf="detailsForm.get('email')?.invalid && detailsForm.get('email')?.touched">
+    <small>Email is required.</small>
+  </div>
+
+  <button type="submit" [disabled]="detailsForm.invalid">Submit</button>
+</form>

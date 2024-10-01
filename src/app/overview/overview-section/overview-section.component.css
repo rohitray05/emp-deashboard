@@ -1,0 +1,19 @@
+.section-details{
+  list-style: none;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item{
+  height: 4rem;
+  color: #3ba77b;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.list-item:hover{
+  border-bottom: 1px solid #dddbdb;
+}

@@ -1,0 +1,30 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dddbdb;;
+  padding: 0.2rem;
+  max-width: 21rem;
+}
+.card-header{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.details{
+  display: flex;
+}
+
+.card-footer{
+  display: flex;
+}
+
+.contact-info{
+  display: flex;
+  gap: 0.3rem;
+}
+
+.card:hover{
+  border: 1px solid black;
+  cursor: pointer;
+}

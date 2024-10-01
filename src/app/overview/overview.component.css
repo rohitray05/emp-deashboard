@@ -1,0 +1,35 @@
+.main{
+  height: 99vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-body{
+  display: flex;
+  flex-wrap: wrap;
+  gap:0.2rem;
+  margin:1.2rem;
+}
+
+.body{
+  display: flex;
+  flex-basis: 80%;
+  background-color: #ffffff;
+}
+
+.overview-header{
+  flex-basis: 20%;     /* 20% of the container's width */
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddbdb;
+}
+
+.overview-section{
+  flex-basis: 20%;
+  background-color: #ffffff;
+  border-right: 1px solid #dddbdb;
+}
+
+.body-footer{
+  border-top: 1px solid #dddbdb;
+}

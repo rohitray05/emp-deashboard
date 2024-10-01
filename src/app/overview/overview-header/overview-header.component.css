@@ -1,0 +1,18 @@
+.heading{
+  color:#454546
+}
+
+.header-main{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.filter{
+  display: flex;
+  justify-content: space-around;
+  margin-right: 2rem;
+  gap: 1rem;
+}

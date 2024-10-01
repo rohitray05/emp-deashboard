@@ -1,0 +1,26 @@
+<div class="card" id="{{employee?.id}}">
+  <div class="card-header">
+    {{employee?.id}}
+    <span><button (click)="deleteEmployee(employee?.id)">Delete</button></span>
+    <span><button (click)="getEmployeeDetails(employee?.id)">Edit</button></span>
+    <span>{{employee?.name?.firstName + ' ' + employee?.name?.middleName + ' ' + employee?.name?.lastName}}</span>
+    <span>{{employee?.designation}}</span>
+
+  </div>
+  <div class="card-body">
+    <div class="body-content">
+      <div class="details">
+        <p><span>Experience: </span>{{employee?.experience}}</p>
+        <p><span>Date of Joining: </span>{{employee?.doj}}</p>
+      </div>
+      <p><span>Current Team: </span>{{employee?.currentTeam}}</p>
+      <p><span>Reporting Manager: </span>{{employee?.reportingMangaer?.firstName + ' ' + employee?.reportingMangaer?.middleName + ' ' + employee?.reportingMangaer?.lastName}}</p>
+    </div>
+  </div>
+  <div class="card-footer">
+    <div class="contact-info">
+      <p><span>Phone: </span>{{employee?.mobile}}</p>
+      <p><span>Email: </span>{{employee?.email}}</p>
+    </div>
+  </div> 
+</div>
